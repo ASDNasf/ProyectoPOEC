@@ -1,0 +1,356 @@
+    /**css grid**/
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "top-page top-page top-page" "mid-page mid-page mid-page" "Footer Footer Footer";
+        background-color: rgba(153, 236, 209, 0.815)
+    }
+    
+    .mid-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "foto-a slider slider slider slider slider slider foto-b" "foto-a slider slider slider slider slider slider foto-b" "foto-a slider slider slider slider slider slider foto-b" "productos productos productos productos productos productos productos productos" "productos productos productos productos productos productos productos productos" "productos productos productos productos productos productos productos productos" "productos productos productos productos productos productos productos productos" "productos productos productos productos productos productos productos productos";
+        grid-area: mid-page;
+    }
+    
+    .promo2 {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    /** mid-page-prods**/
+    
+    .productos {
+        display: grid;
+        grid-template-columns: 0fr 1.5fr 0.1fr 2fr 0.1fr 1.5fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: ". prod-1 . prod-2 . prod-3" ". prod-1 . prod-2 . prod-3" ". prod-1 . prod-2 . prod-3" ". prod-1 . prod-2 . prod-3" ". prod-1 . prod-2 . prod-3";
+        grid-area: productos;
+        margin-left: 30px;
+    }
+    
+    .prod-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "foto-2 foto-2 foto-2" "foto-2 foto-2 foto-2" "foto-2 foto-2 foto-2" "info-2 info-2 info-2";
+        grid-area: prod-2;
+        max-height: 500px;
+    }
+    
+    .info-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "info-prod-2" "precio-2" "comprar-2";
+        grid-area: info-2;
+    }
+    
+    .info-prod-2 {
+        grid-area: info-prod-2;
+        width: 50px;
+        margin: 0%;
+        height: 20px;
+    }
+    
+    .precio-2 {
+        grid-area: precio-2;
+        max-width: 300px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    
+    .comprar-2 {
+        grid-area: comprar-2;
+    }
+    
+    .foto-2 {
+        grid-area: foto-2;
+        max-width: 300px;
+        width: 300px;
+        max-height: 300px;
+        height: 300px;
+        margin-bottom: 0;
+    }
+    
+    .foto-L {
+        width: 300px;
+        height: 270px;
+    }
+    
+    .prod-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "foto-3 foto-3 foto-3" "foto-3 foto-3 foto-3" "foto-3 foto-3 foto-3" "info-3 info-3 info-3";
+        grid-area: prod-3;
+        max-height: 500px;
+    }
+    
+    .foto-3 {
+        grid-area: foto-3;
+    }
+    
+    .info-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "info-prod-3" "precio-3" "comprar-3";
+        grid-area: info-3;
+    }
+    
+    .info-prod-3 {
+        grid-area: info-prod-3;
+    }
+    
+    .precio-3 {
+        grid-area: precio-3;
+    }
+    
+    .comprar-3 {
+        grid-area: comprar-3;
+    }
+    
+    .prod-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "foto-1 foto-1 foto-1" "foto-1 foto-1 foto-1" "foto-1 foto-1 foto-1" "info-1 info-1 info-1";
+        grid-area: prod-1;
+        max-height: 500px;
+    }
+    
+    .info-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "info-prod-1" "precio-1" "comprar-1";
+        grid-area: info-1;
+    }
+    
+    .info-prod-1 {
+        grid-area: info-prod-1;
+    }
+    
+    .precio-1 {
+        grid-area: precio-1;
+    }
+    
+    .comprar-1 {
+        grid-area: comprar-1;
+    }
+    
+    .foto-1 {
+        grid-area: foto-1;
+    }
+    /**top-mid-page**/
+    
+    .foto-a {
+        grid-area: foto-a;
+    }
+    
+    .slider {
+        grid-area: slider;
+        margin-left: 30%;
+    }
+    
+    .foto-b {
+        grid-area: foto-b;
+    }
+    /**top-page**/
+    
+    .top-page {
+        display: grid;
+        grid-template-columns: 0.7fr 1.6fr 0.7fr;
+        grid-template-rows: 2.2fr 2fr 2.1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "nom-page menus menus" "nom-page menus menus" "nom-page menus menus";
+        grid-area: top-page;
+    }
+    
+    .nom-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "nombre-pag nombre-pag nombre-pag" "nombre-pag nombre-pag nombre-pag" "refran-nom refran-nom refran-nom";
+        grid-area: nom-page;
+        max-height: 170px;
+    }
+    
+    .nombre-pag {
+        grid-area: nombre-pag;
+        font-family: 'Algerian';
+        color: rgb(255, 0, 0);
+        font-size: x-large;
+        margin-left: 30px;
+        width: 120px;
+        max-height: 100px;
+    }
+    
+    .n {
+        border-style: inset;
+        max-width: 140px;
+        border-color: brown;
+        position: sticky;
+    }
+    
+    .refran-nom {
+        grid-area: refran-nom;
+        font-family: sans-serif;
+        color: red;
+        text-align: center;
+        margin-top: 0%;
+        margin-left: 30px;
+        max-width: 120px;
+        max-height: 40px;
+    }
+    
+    .menus {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "bebidas legumbres lacteos busqueda" "carnes niños no-se busqueda";
+        grid-area: menus;
+    }
+    
+    .bebidas {
+        grid-area: bebidas;
+    }
+    
+    .legumbres {
+        grid-area: legumbres;
+    }
+    
+    .lacteos {
+        grid-area: lacteos;
+    }
+    
+    .carnes {
+        grid-area: carnes;
+    }
+    
+    .niños {
+        grid-area: niños;
+    }
+    
+    .busqueda {
+        grid-area: busqueda;
+    }
+    
+    .no-se {
+        grid-area: no-se;
+    }
+    
+    .Footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "cosas ubi contac" "cosas ubi contac" "cosas ubi contac";
+        grid-area: Footer;
+    }
+    
+    .cosas {
+        grid-area: cosas;
+        font-family: sans-serif;
+        margin-left: 30px;
+    }
+    
+    .ubi {
+        grid-area: ubi;
+        font-family: sans-serif;
+        color: blueviolet;
+    }
+    
+    .contac {
+        display: grid;
+        grid-template-columns: 0.3fr 1.7fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "pal-contac pal-contac" "icon-contac contactos" "icon-contac contactos" "icon-contac contactos";
+        grid-area: contac;
+    }
+    
+    .pal-contac {
+        grid-area: pal-contac;
+        margin-left: 14%;
+    }
+    
+    .contactos {
+        grid-area: contactos;
+    }
+    
+    .icon-contac {
+        grid-area: icon-contac;
+    }
+    
+    .icono-wapp {
+        color: chartreuse;
+    }
+    
+    .wpp {
+        text-decoration: none;
+        color: #25d366;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    
+    .instagram {
+        text-decoration: none;
+        color: violet;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    
+    .gmail {
+        text-decoration: none;
+        color: rgba(175, 76, 76, 0.815);
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    /** Botón de WhatsApp **/
+    
+    .whatsapp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 100;
+    }
+    
+    .whatsapp-icon {
+        margin-top: 13px;
+    }
